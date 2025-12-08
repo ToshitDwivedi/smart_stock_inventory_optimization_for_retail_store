@@ -1,0 +1,119 @@
+Product_ID,Product_Name,Units_Sold,Price,Month,Opening_Stock
+P001,Rice,130,60,Jan,200
+P001,Rice,125,60,Feb,190
+P001,Rice,140,60,Mar,180
+P001,Rice,110,60,Apr,170
+P001,Rice,145,60,May,160
+P001,Rice,135,60,Jun,150
+
+P002,Sugar,70,45,Jan,150
+P002,Sugar,80,45,Feb,140
+P002,Sugar,95,45,Mar,130
+P002,Sugar,90,45,Apr,120
+P002,Sugar,85,45,May,110
+P002,Sugar,75,45,Jun,100
+
+P003,Soap,150,35,Jan,220
+P003,Soap,140,35,Feb,210
+P003,Soap,130,35,Mar,200
+P003,Soap,120,35,Apr,190
+P003,Soap,125,35,May,180
+P003,Soap,115,35,Jun,170
+
+P004,Oil,15,150,Jan,50
+P004,Oil,18,150,Feb,45
+P004,Oil,12,150,Mar,40
+P004,Oil,10,150,Apr,35
+P004,Oil,20,150,May,30
+P004,Oil,17,150,Jun,25
+
+P005,Shampoo,60,120,Jan,120
+P005,Shampoo,55,120,Feb,110
+P005,Shampoo,65,120,Mar,105
+P005,Shampoo,70,120,Apr,100
+P005,Shampoo,62,120,May,90
+P005,Shampoo,68,120,Jun,85
+
+P006,Tea,85,80,Jan,160
+P006,Tea,90,80,Feb,150
+P006,Tea,95,80,Mar,140
+P006,Tea,100,80,Apr,130
+P006,Tea,105,80,May,120
+P006,Tea,95,80,Jun,110
+
+P007,Toothpaste,110,50,Jan,180
+P007,Toothpaste,115,50,Feb,170
+P007,Toothpaste,120,50,Mar,160
+P007,Toothpaste,125,50,Apr,150
+P007,Toothpaste,130,50,May,140
+P007,Toothpaste,115,50,Jun,130
+
+P008,Wheat,140,55,Jan,210
+P008,Wheat,135,55,Feb,200
+P008,Wheat,130,55,Mar,190
+P008,Wheat,145,55,Apr,180
+P008,Wheat,150,55,May,170
+P008,Wheat,140,55,Jun,160
+
+P009,Facewash,35,180,Jan,80
+P009,Facewash,40,180,Feb,75
+P009,Facewash,38,180,Mar,70
+P009,Facewash,45,180,Apr,65
+P009,Facewash,42,180,May,60
+P009,Facewash,50,180,Jun,55
+
+P010,Dal,90,95,Jan,140
+P010,Dal,100,95,Feb,130
+P010,Dal,85,95,Mar,120
+P010,Dal,92,95,Apr,115
+P010,Dal,88,95,May,110
+P010,Dal,95,95,Jun,105
+
+P011,Biscuits,200,20,Jan,400
+P011,Biscuits,180,20,Feb,380
+P011,Biscuits,190,20,Mar,360
+P011,Biscuits,210,20,Apr,340
+P011,Biscuits,195,20,May,320
+P011,Biscuits,205,20,Jun,300
+
+P012,Cold Drink,170,30,Jan,300
+P012,Cold Drink,160,30,Feb,290
+P012,Cold Drink,175,30,Mar,280
+P012,Cold Drink,180,30,Apr,270
+P012,Cold Drink,185,30,May,260
+P012,Cold Drink,190,30,Jun,250
+
+P013,Snacks,160,25,Jan,280
+P013,Snacks,155,25,Feb,270
+P013,Snacks,170,25,Mar,260
+P013,Snacks,165,25,Apr,250
+P013,Snacks,175,25,May,240
+P013,Snacks,160,25,Jun,230
+
+P014,Perfume,12,250,Jan,40
+P014,Perfume,10,250,Feb,38
+P014,Perfume,15,250,Mar,36
+P014,Perfume,9,250,Apr,34
+P014,Perfume,11,250,May,32
+P014,Perfume,13,250,Jun,30
+
+P015,Hand Sanitizer,18,90,Jan,50
+P015,Hand Sanitizer,15,90,Feb,45
+P015,Hand Sanitizer,12,90,Mar,42
+P015,Hand Sanitizer,14,90,Apr,40
+P015,Hand Sanitizer,10,90,May,38
+P015,Hand Sanitizer,16,90,Jun,36
+
+P016,Body Spray,8,200,Jan,35
+P016,Body Spray,12,200,Feb,34
+P016,Body Spray,9,200,Mar,33
+P016,Body Spray,10,200,Apr,32
+P016,Body Spray,7,200,May,30
+P016,Body Spray,8,200,Jun,29
+
+P017,Lotion,20,150,Jan,55
+P017,Lotion,18,150,Feb,53
+P017,Lotion,22,150,Mar,50
+P017,Lotion,19,150,Apr,48
+P017,Lotion,21,150,May,45
+P017,Lotion,17,150,Jun,42
