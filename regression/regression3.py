@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
-file_path="../original_files/updated_dataset.csv"
+file_path="../dataset/updated_dataset.csv"
 df=pd.read_csv(file_path)
 soap_data = df[df['Product_ID'] == 'P003'].sort_values(by='Month_Num')
 X_soap = soap_data[['Month_Num']]

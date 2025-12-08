@@ -2,7 +2,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
-file_path="../original_files/updated_dataset.csv"
+file_path="../dataset/updated_dataset.csv"
 df=pd.read_csv(file_path)
 X = df[['Price', 'Opening_Stock']]
 y = df['Units_Sold']

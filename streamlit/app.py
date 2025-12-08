@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title("SmartStock Inventory Optimization Dashboard")
 
-file_path="../original_files/updated_dataset.csv"
+file_path="../dataset/updated_dataset.csv"
 df=pd.read_csv(file_path)
 
 st.subheader("Top 5 Best Selling Products")

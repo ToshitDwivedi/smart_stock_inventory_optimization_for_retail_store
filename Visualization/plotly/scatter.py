@@ -1,7 +1,7 @@
 import plotly.express as px
 import pandas as pd
 import plotly.io as pio
-file_path="../../original_files/updated_dataset.csv"
+file_path="../../dataset/updated_dataset.csv"
 df=pd.read_csv(file_path)
 #print(df)
 

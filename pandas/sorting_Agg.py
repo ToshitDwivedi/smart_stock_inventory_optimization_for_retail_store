@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("../original_files/updated_dataset.csv")
+df = pd.read_csv("../dataset/updated_dataset.csv")
 
 # Sorting
 sorted_df = df.sort_values("Units_Sold", ascending=False)

@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv("../original_files/updated_dataset.csv")
+df = pd.read_csv("../dataset/updated_dataset.csv")
 units = np.array(df["Units_Sold"])
 #Statistical operations
 print("Maximum units sold:", np.max(units))

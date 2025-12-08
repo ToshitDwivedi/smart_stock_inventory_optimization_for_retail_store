@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
-file_path="../original_files/updated_dataset.csv"
+file_path="../dataset/updated_dataset.csv"
 df=pd.read_csv(file_path)
 monthly_sales = df.groupby('Month_Num')['Total_Sales_Value'].sum().reset_index()
 X = monthly_sales[['Month_Num']]
