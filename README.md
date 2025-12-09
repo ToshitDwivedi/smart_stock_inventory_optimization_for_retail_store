@@ -14,38 +14,35 @@ This project analyzes retail sales data to help optimize inventory management th
 
 ```
 ├── dataset/
-│   ├── sales_data.csv           # Original sales data
-│   └── updated_dataset.csv      # Processed data with additional features
+│   ├── sales_data.csv                    # Original sales data
+│   └── updated_dataset.csv               # Processed data with features
 ├── numpy/
-│   ├── mathfunc.py             # Statistical operations using NumPy
-│   ├── null_n.py               # Null value handling with NumPy
-│   └── numpy1.py               # Basic NumPy operations
+│   ├── statistical_analysis.py           # Comprehensive statistical operations
+│   ├── array_operations.py               # Array transformations & operations
+│   └── missing_data_handler.py           # Missing value handling
 ├── pandas/
-│   ├── adding_newc.py          # Adding calculated columns
-│   ├── filtering.py            # Data filtering operations
-│   ├── groupby.py              # Aggregation using groupby
-│   ├── merging.py              # Data merging operations
-│   ├── null_values.py          # Handling missing values
-│   └── sorting_Agg.py          # Sorting and aggregation
+│   ├── data_manipulation.py              # Filtering, sorting, aggregation
+│   └── advanced_analysis.py              # Pivot tables, merging, time series
 ├── preprocessing/
-│   └── preprocess.py           # Data preprocessing pipeline
+│   └── preprocess.py                     # Complete ETL pipeline
 ├── regression/
-│   ├── regression.ipynb        # Interactive regression analysis
-│   ├── reggression1.py         # Units sold prediction
-│   ├── regression2.py          # Sales value prediction
-│   └── regression3.py          # Product-specific predictions
+│   ├── sales_prediction_model.py         # Predict units sold (Price, Stock)
+│   ├── monthly_forecast_model.py         # Monthly sales forecasting
+│   └── regression.ipynb                  # Interactive analysis notebook
+├── visualization/
+│   └── create_all_visualizations.py      # Generate all charts (Matplotlib + Plotly)
 ├── streamlit/
-│   └── app.py                  # Interactive dashboard
-├── Visualization/
-│   ├── Matplotlib/             # Static visualizations
-│   │   ├── bar_chart.py
-│   │   ├── line_chart.py
-│   │   └── scatter.py
-│   └── plotly/                 # Interactive visualizations
-│       ├── histogram.py
-│       ├── pie_chart.py
-│       └── scatter.py
-└── output/                     # Generated outputs
+│   └── app.py                            # Interactive web dashboard
+├── output/
+│   ├── visualizations/
+│   │   ├── matplotlib/                   # 5 static PNG charts
+│   │   └── plotly/                       # 8 interactive HTML charts
+│   ├── *.csv                             # Analysis results
+│   ├── *.txt                             # Reports and summaries
+│   └── *.png                             # Model visualizations
+├── .gitignore                            # Git ignore file
+├── requirements.txt                      # Python dependencies
+└── PROJECT_SUMMARY.md                    # Detailed project documentation
 ```
 
 ## 🚀 Features
@@ -61,9 +58,9 @@ This project analyzes retail sales data to help optimize inventory management th
 - **Product-Specific Models**: Individual product demand forecasting
 
 ### Visualizations
-- **Matplotlib**: Bar charts, line charts, scatter plots
-- **Plotly**: Interactive histograms, pie charts, scatter plots
-- **Streamlit Dashboard**: Interactive web-based analytics dashboard
+- **Matplotlib**: 5 static visualizations (bar charts, line charts, scatter plots, histograms, box plots)
+- **Plotly**: 8 interactive visualizations (bar, line, 3D scatter, sunburst, treemap, heatmap, pie chart, dashboard)
+- **Streamlit Dashboard**: Real-time interactive web-based analytics with 5 tabs
 
 ### Key Insights
 - Identify best-selling products
@@ -110,52 +107,54 @@ pip install pandas numpy matplotlib plotly scikit-learn streamlit
 
 ## 💻 Usage
 
-### Run Data Analysis Scripts
+### 1. Data Preprocessing
 ```bash
-# NumPy operations
-python numpy/mathfunc.py
-
-# Pandas operations
-python pandas/filtering.py
-
-# Preprocessing
+# Run complete ETL pipeline
 python preprocessing/preprocess.py
 ```
 
-### Run Regression Models
+### 2. Run Analysis Scripts
 ```bash
-# Basic prediction model
-python regression/reggression1.py
+# NumPy statistical analysis
+python numpy/statistical_analysis.py
+python numpy/array_operations.py
 
-# Monthly sales prediction
-python regression/regression2.py
-
-# Product-specific prediction
-python regression/regression3.py
+# Pandas data manipulation
+python pandas/data_manipulation.py
+python pandas/advanced_analysis.py
 ```
 
-### Generate Visualizations
+### 3. Run Machine Learning Models
 ```bash
-# Matplotlib visualizations
-python Visualization/Matplotlib/bar_chart.py
+# Sales prediction model
+python regression/sales_prediction_model.py
 
-# Plotly visualizations
-python Visualization/plotly/histogram.py
+# Monthly forecast model
+python regression/monthly_forecast_model.py
 ```
 
-### Launch Interactive Dashboard
+### 4. Generate All Visualizations
+```bash
+# Creates 13 charts (5 Matplotlib PNGs + 8 Plotly HTMLs)
+python visualization/create_all_visualizations.py
+```
+
+### 5. Launch Interactive Dashboard
 ```bash
 streamlit run streamlit/app.py
 ```
 
+**Note:** The repository shows 99.8% HTML because Plotly generates interactive HTML files for visualizations. The actual codebase is Python.
+
 ## 📈 Sample Outputs
 
-The project provides:
-- Statistical summaries of sales data
-- Regression models with prediction accuracy
-- Visual charts showing sales patterns
-- Interactive dashboard for exploring data
-- Stockout risk assessments
+The project generates:
+- **Statistical Reports**: Comprehensive sales analysis with mean, median, std dev
+- **Regression Models**: R² scores, RMSE, MAE metrics with prediction accuracy
+- **13 Visualizations**: 5 static PNGs + 8 interactive HTML charts
+- **Interactive Dashboard**: Real-time analytics with KPIs, filters, and insights
+- **CSV Reports**: Filtered data, pivot tables, aggregations, time series analysis
+- **Risk Assessments**: Stockout probability and inventory optimization recommendations
 
 ## 🎯 Use Cases
 

@@ -1,0 +1,7 @@
+# Exclude output HTML files from language statistics
+output/** linguist-generated=true
+output/**/*.html linguist-generated=true
+
+# Mark Python as primary language
+*.py linguist-detectable=true
+*.ipynb linguist-detectable=true
