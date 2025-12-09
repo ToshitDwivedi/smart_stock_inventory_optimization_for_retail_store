@@ -1,337 +1,179 @@
-# 🏪 Smart Stock Inventory Optimization for Retail Stores
+# Smart Stock Inventory Optimization For Retail Stores
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red)](https://streamlit.io/)
+This project is developed as part of the **Infosys Springboard Internship**. It demonstrates data analysis, machine learning, and visualization techniques to optimize inventory management for retail stores.
 
-> **A comprehensive data science project for optimizing retail inventory management using Python, Machine Learning, and Interactive Dashboards**
+## 📋 Project Overview
 
-**Developed by:** Toshit Dwivedi  
-**Program:** Infosys Springboard Internship 2024-2025
-
----
-
-## 📊 Project Overview
-
-This project demonstrates end-to-end data science workflow for retail inventory optimization, including:
-- **Data Preprocessing & Cleaning**
-- **Exploratory Data Analysis (EDA)**
-- **Statistical Analysis with NumPy**
-- **Data Manipulation with Pandas**
-- **Machine Learning for Sales Prediction**
-- **Interactive Visualizations**
-- **Real-time Dashboard with Streamlit**
-
-### 🎯 Business Objectives
-
-1. **Optimize Stock Levels** - Prevent overstocking and stockouts
-2. **Forecast Sales** - Predict future demand patterns
-3. **Identify Risks** - Flag products with high stockout probability
-4. **Maximize Revenue** - Data-driven pricing and inventory decisions
-5. **Visualize Insights** - Interactive dashboards for stakeholders
-
----
+This project analyzes retail sales data to help optimize inventory management through:
+- Statistical analysis of sales patterns
+- Predictive modeling for stock requirements
+- Interactive visualizations for data insights
+- Stockout risk assessment
 
 ## 🗂️ Project Structure
 
 ```
-Smart_Stock_Inventory_Optimization/
-│
-├── dataset/                          # Data files
-│   ├── sales_data.csv               # Original raw data
-│   └── updated_dataset.csv          # Processed data with features
-│
-├── numpy/                            # NumPy analysis modules
-│   ├── statistical_analysis.py      # Comprehensive statistical operations
-│   ├── array_operations.py          # Array transformations & operations
-│   └── missing_data_handler.py      # Missing value handling demonstrations
-│
-├── pandas/                           # Pandas data manipulation
-│   ├── data_manipulation.py         # Filtering, sorting, aggregation
-│   └── advanced_analysis.py         # Pivot tables, merging, time series
-│
-├── preprocessing/                    # Data preprocessing pipeline
-│   └── preprocess.py                # Complete data cleaning & feature engineering
-│
-├── regression/                       # Machine learning models
-│   ├── sales_prediction_model.py    # Predict units sold (Price, Stock)
-│   ├── monthly_forecast_model.py    # Monthly sales forecasting
-│   └── regression.ipynb            # Interactive analysis notebook
-│
-├── visualization/                    # Visualization modules
-│   └── create_all_visualizations.py # Generate all charts & plots
-│
-├── streamlit/                        # Interactive dashboard
-│   └── app.py                       # Streamlit web application
-│
-├── output/                           # Generated outputs
-│   ├── visualizations/              # Charts and plots
-│   │   ├── matplotlib/             # Static visualizations
-│   │   └── plotly/                 # Interactive visualizations
-│   ├── *.csv                        # Analysis results
-│   ├── *.txt                        # Reports and summaries
-│   └── *.png                        # Model visualizations
-│
-└── README.md                         # Project documentation
-
+├── dataset/
+│   ├── sales_data.csv           # Original sales data
+│   └── updated_dataset.csv      # Processed data with additional features
+├── numpy/
+│   ├── mathfunc.py             # Statistical operations using NumPy
+│   ├── null_n.py               # Null value handling with NumPy
+│   └── numpy1.py               # Basic NumPy operations
+├── pandas/
+│   ├── adding_newc.py          # Adding calculated columns
+│   ├── filtering.py            # Data filtering operations
+│   ├── groupby.py              # Aggregation using groupby
+│   ├── merging.py              # Data merging operations
+│   ├── null_values.py          # Handling missing values
+│   └── sorting_Agg.py          # Sorting and aggregation
+├── preprocessing/
+│   └── preprocess.py           # Data preprocessing pipeline
+├── regression/
+│   ├── regression.ipynb        # Interactive regression analysis
+│   ├── reggression1.py         # Units sold prediction
+│   ├── regression2.py          # Sales value prediction
+│   └── regression3.py          # Product-specific predictions
+├── streamlit/
+│   └── app.py                  # Interactive dashboard
+├── Visualization/
+│   ├── Matplotlib/             # Static visualizations
+│   │   ├── bar_chart.py
+│   │   ├── line_chart.py
+│   │   └── scatter.py
+│   └── plotly/                 # Interactive visualizations
+│       ├── histogram.py
+│       ├── pie_chart.py
+│       └── scatter.py
+└── output/                     # Generated outputs
 ```
 
----
+## 🚀 Features
 
-## 🚀 Quick Start
+### Data Analysis
+- **NumPy Operations**: Statistical calculations, array operations
+- **Pandas Operations**: Data manipulation, filtering, grouping, merging
+- **Data Preprocessing**: Cleaning, feature engineering, null value handling
 
-### Prerequisites
+### Machine Learning
+- **Linear Regression Models**: Predict units sold based on stock and pricing
+- **Sales Forecasting**: Monthly sales predictions
+- **Product-Specific Models**: Individual product demand forecasting
 
-- Python 3.8 or higher
-- pip (Python package manager)
-- Git
+### Visualizations
+- **Matplotlib**: Bar charts, line charts, scatter plots
+- **Plotly**: Interactive histograms, pie charts, scatter plots
+- **Streamlit Dashboard**: Interactive web-based analytics dashboard
 
-### Installation
+### Key Insights
+- Identify best-selling products
+- Track sales trends over time
+- Analyze price vs demand relationships
+- Assess stockout risks
+- Predict future inventory requirements
 
-1. **Clone the repository**
+## 📊 Dataset
+
+The dataset contains retail sales information with the following features:
+- `Product_ID`: Unique product identifier
+- `Product_Name`: Name of the product
+- `Units_Sold`: Number of units sold
+- `Price`: Product price
+- `Month`: Sales month
+- `Opening_Stock`: Initial stock quantity
+- `Total_Sales_Value`: Calculated total sales revenue
+- `Month_Num`: Numeric month representation
+
+## 🛠️ Technologies Used
+
+- **Python 3.x**
+- **Libraries**:
+  - NumPy - Numerical computing
+  - Pandas - Data manipulation
+  - Matplotlib - Static visualizations
+  - Plotly - Interactive visualizations
+  - Scikit-learn - Machine learning
+  - Streamlit - Web dashboard
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/ToshitDwivedi/smart_stock_inventory_optimization_for_retail_store.git
 cd smart_stock_inventory_optimization_for_retail_store
 ```
 
-2. **Install dependencies**
+2. Install required packages:
 ```bash
-pip install pandas numpy matplotlib plotly scikit-learn streamlit seaborn
+pip install pandas numpy matplotlib plotly scikit-learn streamlit
 ```
 
-### 📦 Required Packages
+## 💻 Usage
 
-```
-pandas>=2.0.0
-numpy>=1.24.0
-matplotlib>=3.7.0
-plotly>=5.14.0
-scikit-learn>=1.3.0
-streamlit>=1.28.0
-seaborn>=0.12.0
-```
-
----
-
-## 💻 Usage Guide
-
-### 1. Data Preprocessing
-
-Process raw data and create features:
-
+### Run Data Analysis Scripts
 ```bash
-cd preprocessing
-python preprocess.py
+# NumPy operations
+python numpy/mathfunc.py
+
+# Pandas operations
+python pandas/filtering.py
+
+# Preprocessing
+python preprocessing/preprocess.py
 ```
 
-### 2. NumPy Statistical Analysis
-
+### Run Regression Models
 ```bash
-cd numpy
-python statistical_analysis.py
-python array_operations.py
-python missing_data_handler.py
+# Basic prediction model
+python regression/reggression1.py
+
+# Monthly sales prediction
+python regression/regression2.py
+
+# Product-specific prediction
+python regression/regression3.py
 ```
 
-### 3. Pandas Data Manipulation
-
+### Generate Visualizations
 ```bash
-cd pandas
-python data_manipulation.py
-python advanced_analysis.py
+# Matplotlib visualizations
+python Visualization/Matplotlib/bar_chart.py
+
+# Plotly visualizations
+python Visualization/plotly/histogram.py
 ```
 
-### 4. Machine Learning Models
-
+### Launch Interactive Dashboard
 ```bash
-cd regression
-python sales_prediction_model.py
-python monthly_forecast_model.py
+streamlit run streamlit/app.py
 ```
 
-### 5. Create Visualizations
+## 📈 Sample Outputs
 
-```bash
-cd visualization
-python create_all_visualizations.py
-```
+The project provides:
+- Statistical summaries of sales data
+- Regression models with prediction accuracy
+- Visual charts showing sales patterns
+- Interactive dashboard for exploring data
+- Stockout risk assessments
 
-### 6. Launch Interactive Dashboard
+## 🎯 Use Cases
 
-```bash
-cd streamlit
-streamlit run app.py
-```
-
-The dashboard will open at `http://localhost:8501`
-
----
-
-## 📈 Features & Capabilities
-
-### Data Analysis
-
-- Statistical Operations (Mean, Median, Std Dev, Correlations)
-- Data Transformations (Filtering, Grouping, Pivoting, Merging)
-- Time Series Analysis (Trends, Seasonality, Growth Rates)
-- Missing Data Handling (Multiple Imputation Techniques)
-
-### Machine Learning
-
-- Linear Regression Models for Sales Prediction
-- Monthly Sales Forecasting
-- Model Evaluation (R², RMSE, MAE)
-- Visualization (Actual vs Predicted, Residuals)
-
-### Visualizations
-
-**Static (Matplotlib):** Bar charts, Line charts, Scatter plots, Histograms, Box plots
-
-**Interactive (Plotly):** 3D scatter, Heatmaps, Treemaps, Sunburst charts, Pie charts
-
-### Dashboard Features
-
-- Real-time KPIs (Sales, Units, Efficiency)
-- Interactive Filters (Product, Month)
-- Multiple Analysis Tabs
-- Risk Analysis & Stockout Warnings
-- Responsive Design
-
----
-
-## 📊 Dataset
-
-### Features
-
-| Column | Description |
-|--------|-------------|
-| Product_ID | Unique product identifier |
-| Product_Name | Name of product |
-| Units_Sold | Number of units sold |
-| Price | Product price ($) |
-| Month | Sales month |
-| Opening_Stock | Initial stock quantity |
-| Total_Sales_Value | Revenue (Units × Price) |
-| Stock_Efficiency | Turnover rate (%) |
-
-### Statistics
-
-- **104 Records** across 17 products
-- **6 Months** of data (Jan-Jun)
-- **$509K+** Total Sales Value
-- **9,000+** Units Sold
-
----
-
-## 🎯 Key Insights
-
-1. **Top Products**: Rice, Wheat, Biscuits generate highest revenue
-2. **Sales Trends**: Stable across months with minor variations
-3. **Stock Efficiency**: 58% average turnover rate
-4. **Risk Products**: 15-20% show stockout risk (>70% utilization)
-
----
-
-## 🛠️ Technologies
-
-| Technology | Purpose |
-|------------|---------|
-| Python 3.8+ | Core language |
-| NumPy | Numerical computing |
-| Pandas | Data manipulation |
-| Matplotlib | Static visualization |
-| Plotly | Interactive charts |
-| Scikit-learn | Machine learning |
-| Streamlit | Web dashboard |
-
----
-
-## 📂 Output Files
-
-### Reports
-- `preprocessing_report.txt` - Data cleaning summary
-- `statistical_summary.txt` - NumPy analysis
-- `model_summary.txt` - ML model details
-- `sales_forecast_report.txt` - Forecast analysis
-
-### Data Exports
-- `transformed_sales_data.csv`
-- `product_sales_summary.csv`
-- `monthly_sales_summary.csv`
-- `category_analysis.csv`
-
-### Visualizations
-- Matplotlib PNG files (High-resolution charts)
-- Plotly HTML files (Interactive visualizations)
-
----
-
-## 🔄 Workflow
-
-```
-Raw Data → Preprocessing → Enhanced Data
-    ↓                           ↓
-    ├── NumPy Analysis
-    ├── Pandas Manipulation
-    ├── ML Models
-    └── Visualizations
-            ↓
-    Streamlit Dashboard
-```
-
----
-
-## 🎓 Learning Outcomes
-
-- Data Science Fundamentals
-- Python Libraries (NumPy, Pandas, Scikit-learn)
-- Machine Learning (Regression, Forecasting)
-- Data Visualization (Matplotlib, Plotly)
-- Dashboard Development (Streamlit)
-- Software Engineering Best Practices
-
----
-
-## 🚦 Future Enhancements
-
-- [ ] Advanced ML models (Random Forest, XGBoost)
-- [ ] ARIMA/Prophet forecasting
-- [ ] Product recommendation system
-- [ ] ABC analysis
-- [ ] Automated alerts
-- [ ] Cloud deployment
-
----
+- **Inventory Optimization**: Determine optimal stock levels
+- **Demand Forecasting**: Predict future product demand
+- **Sales Analysis**: Identify trends and patterns
+- **Risk Management**: Identify products at risk of stockout
+- **Business Intelligence**: Data-driven decision making
 
 ## 👨‍💻 Author
 
 **Toshit Dwivedi**
-
-- 🐙 GitHub: [@ToshitDwivedi](https://github.com/ToshitDwivedi)
-- 📧 Email: [Your Email]
-- 💼 LinkedIn: [Your Profile]
-
----
+- GitHub: [@ToshitDwivedi](https://github.com/ToshitDwivedi)
 
 ## 🙏 Acknowledgments
 
-- **Infosys Springboard** - Internship opportunity
-- **Open Source Community** - Amazing libraries and tools
-
----
+This project was developed as part of the **Infosys Springboard Internship Program**.
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
-
----
-
-<div align="center">
-
-**Made with ❤️ for Inventory Optimization**
-
-*Empowering retail businesses with data-driven decisions*
-
-⭐ Star this repo if you found it helpful!
-
-</div>
+This project is open source and available for educational purposes.
