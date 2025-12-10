@@ -1,0 +1,22 @@
+======================================================================
+                    MODEL SUMMARY
+               Sales Prediction Model
+======================================================================
+
+MODEL TYPE: Linear Regression
+TARGET: Units_Sold
+FEATURES: Price, Opening_Stock
+
+MODEL COEFFICIENTS:
+  Price: -0.185274
+  Opening_Stock: 0.522998
+  Intercept: 33.992048
+
+PERFORMANCE METRICS:
+  R² Score: 0.8933
+  RMSE: 19.43
+
+EQUATION:
+  Units_Sold = 33.99 + (-0.1853 × Price) + (0.5230 × Opening_Stock)
+
+======================================================================

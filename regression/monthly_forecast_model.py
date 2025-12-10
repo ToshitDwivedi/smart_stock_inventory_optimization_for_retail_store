@@ -83,7 +83,7 @@ def forecast_future_months(model, monthly_sales):
     print("=" * 60)
     
     # Forecast next 6 months (July to December)
-    future_months = np.array([[7], [8], [9], [10], [11], [12]])
+    future_months = pd.DataFrame({'Month_Num': [7, 8, 9, 10, 11, 12]})
     month_names = ['July', 'August', 'September', 'October', 'November', 'December']
     
     predictions = model.predict(future_months)
@@ -92,7 +92,7 @@ def forecast_future_months(model, monthly_sales):
     print("-" * 60)
     
     forecast_df = pd.DataFrame({
-        'Month_Num': future_months.flatten(),
+        'Month_Num': future_months['Month_Num'].values,
         'Month': month_names,
         'Predicted_Sales_Value': predictions
     })
@@ -136,9 +136,10 @@ def visualize_forecast(monthly_sales, model, forecast_df):
              label='Forecast', linewidth=2, markersize=8, color='#A23B72')
     
     # Trend line
-    all_months = np.array(list(historical_months) + list(future_months)).reshape(-1, 1)
-    trend = model.predict(all_months)
-    plt.plot(all_months, trend, ':', 
+    all_months_values = np.array(list(historical_months) + list(future_months))
+    all_months_df = pd.DataFrame({'Month_Num': all_months_values})
+    trend = model.predict(all_months_df)
+    plt.plot(all_months_values, trend, ':', 
              label='Trend Line', linewidth=1.5, color='#F18F01', alpha=0.7)
     
     plt.xlabel('Month Number', fontsize=12, fontweight='bold')
@@ -164,7 +165,7 @@ def save_forecast_report(forecast_df, monthly_sales, model, r2, rmse):
     """Save comprehensive forecast report."""
     output_path = os.path.join(OUTPUT_DIR, "sales_forecast_report.txt")
     
-    with open(output_path, 'w') as f:
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.write("=" * 70 + "\n")
         f.write(" " * 18 + "SALES FORECAST REPORT\n")
         f.write(" " * 15 + "Monthly Sales Predictions\n")

@@ -132,7 +132,7 @@ with tab1:
             labels={"Total_Sales_Value": "Sales Value ($)", "Product_Name": "Product"}
         )
         fig.update_layout(showlegend=False, height=400)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     with col2:
         # Monthly sales distribution
@@ -146,7 +146,7 @@ with tab1:
             color_discrete_sequence=px.colors.sequential.RdBu
         )
         fig.update_layout(height=400)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     # Product performance table
     st.markdown("#### Product Performance Summary")
@@ -157,7 +157,7 @@ with tab1:
         "Stock_Efficiency": "mean"
     }).round(2).sort_values("Total_Sales_Value", ascending=False)
     summary.columns = ["Total Units Sold", "Total Sales ($)", "Avg Opening Stock", "Avg Efficiency (%)"]
-    st.dataframe(summary, use_container_width=True)
+    st.dataframe(summary, width='stretch')
 
 with tab2:
     st.subheader("Sales Analysis")
@@ -176,7 +176,7 @@ with tab2:
             labels={"Units_Sold": "Units Sold", "Month": "Month"}
         )
         fig.update_layout(height=400, hovermode='x unified')
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     with col2:
         # Price vs Units Sold scatter
@@ -191,7 +191,7 @@ with tab2:
             labels={"Price": "Price ($)", "Units_Sold": "Units Sold", "Opening_Stock": "Stock"}
         )
         fig.update_layout(height=400)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     # Units sold distribution
     st.markdown("#### Units Sold Distribution")
@@ -205,7 +205,7 @@ with tab2:
     fig.add_vline(x=filtered_df["Units_Sold"].mean(), line_dash="dash", line_color="red",
                   annotation_text="Mean", annotation_position="top")
     fig.update_layout(height=400)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 with tab3:
     st.subheader("Risk Analysis & Inventory Management")
@@ -218,7 +218,7 @@ with tab3:
     
     if len(risk_products) > 0:
         risk_products.columns = ["Product", "Month", "Units Sold", "Opening Stock", "Utilization Ratio", "Efficiency (%)"]
-        st.dataframe(risk_products, use_container_width=True)
+        st.dataframe(risk_products, width='stretch')
         
         # Risk visualization
         fig = px.bar(
@@ -231,7 +231,7 @@ with tab3:
         )
         fig.add_hline(y=70, line_dash="dash", line_color="orange", annotation_text="Risk Threshold (70%)")
         fig.update_layout(height=400)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     else:
         st.success("✓ No high-risk products found in the selected data!")
     
@@ -250,7 +250,7 @@ with tab3:
         aspect="auto"
     )
     fig.update_layout(height=500)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 with tab4:
     st.subheader("Revenue Insights")
@@ -269,7 +269,7 @@ with tab4:
             color_continuous_scale="Greens"
         )
         fig.update_layout(height=450)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     with col2:
         # Revenue per unit analysis
@@ -286,7 +286,7 @@ with tab4:
             labels={"Revenue_Per_Unit": "Revenue/Unit ($)", "Product_Name": "Product"}
         )
         fig.update_layout(height=450)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     # Monthly revenue trend
     st.markdown("#### Monthly Revenue Trend")
@@ -310,7 +310,7 @@ with tab4:
     fig.update_yaxes(title_text="Revenue ($)", secondary_y=False)
     fig.update_yaxes(title_text="Units Sold", secondary_y=True)
     fig.update_layout(height=400, hovermode="x unified")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 with tab5:
     st.subheader("Time Series Analysis")
@@ -334,7 +334,7 @@ with tab5:
             marker=dict(size=10)
         ))
         fig.update_layout(height=350, hovermode="x")
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     with col2:
         # Stock vs Sales for selected product
@@ -355,7 +355,7 @@ with tab5:
             marker=dict(size=8)
         ))
         fig.update_layout(height=350, barmode="group", hovermode="x")
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width='stretch')
     
     # All products comparison
     st.markdown("#### All Products - Monthly Comparison")
@@ -368,7 +368,7 @@ with tab5:
         labels={"Units_Sold": "Units Sold", "Month": "Month"}
     )
     fig.update_layout(height=500, hovermode="x unified")
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
 # Footer
 st.markdown("---")

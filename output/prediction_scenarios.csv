@@ -1,0 +1,4 @@
+Scenario,Price,Opening_Stock,Predicted_Units_Sold
+Scenario 1,50,150,103.17806133308775
+Scenario 2,75,200,124.69611721240709
+Scenario 3,30,250,159.18334061242498

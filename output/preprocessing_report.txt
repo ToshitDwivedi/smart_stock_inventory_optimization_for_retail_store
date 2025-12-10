@@ -1,0 +1,45 @@
+======================================================================
+               DATA PREPROCESSING REPORT
+          Smart Stock Inventory Optimization
+======================================================================
+
+Report Generated: 2025-12-10 20:48:07
+
+1. INPUT DATA
+----------------------------------------------------------------------
+Source File: c:\Users\Toshit Dwivedi\Desktop\Smart_Stock_Inventory_Optimization_For_Retail_Stores-main\preprocessing\..\dataset\sales_data.csv
+Records Processed: 102
+Original Columns: 6
+
+2. DATA QUALITY
+----------------------------------------------------------------------
+Missing Values: 0
+Duplicate Rows: 0
+Validation Issues: 0
+
+3. FEATURE ENGINEERING
+----------------------------------------------------------------------
+New Columns Added:
+  - Total_Sales_Value: Product of Units_Sold × Price
+  - Month_Num: Numeric representation of months
+  - Remaining_Stock: Opening_Stock - Units_Sold
+  - Stock_Turnover_Rate: (Units_Sold / Opening_Stock) × 100
+  - Revenue_Per_Unit: Total_Sales_Value / Units_Sold
+
+4. DATASET SUMMARY
+----------------------------------------------------------------------
+Final Records: 102
+Final Columns: 11
+Total Sales Value: $514,400.00
+Total Units Sold: 9,008
+Average Price: $96.18
+Average Stock Turnover: 59.19%
+
+5. OUTPUT
+----------------------------------------------------------------------
+Processed Data Saved: c:\Users\Toshit Dwivedi\Desktop\Smart_Stock_Inventory_Optimization_For_Retail_Stores-main\preprocessing\..\dataset\updated_dataset.csv
+Report Saved: c:\Users\Toshit Dwivedi\Desktop\Smart_Stock_Inventory_Optimization_For_Retail_Stores-main\preprocessing\..\output\preprocessing_report.txt
+
+======================================================================
+Preprocessing completed successfully!
+======================================================================

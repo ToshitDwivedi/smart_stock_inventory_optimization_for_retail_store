@@ -1,0 +1,49 @@
+======================================================================
+                  SALES FORECAST REPORT
+               Monthly Sales Predictions
+======================================================================
+
+1. HISTORICAL DATA SUMMARY (Jan-Jun)
+----------------------------------------------------------------------
+  Month 1 (Jan): $   82,820.00
+  Month 2 (Feb): $   83,600.00
+  Month 3 (Mar): $   85,720.00
+  Month 4 (Apr): $   85,900.00
+  Month 5 (May): $   88,435.00
+  Month 6 (Jun): $   87,925.00
+  Total H1:          $  514,400.00
+  Average/Month:     $   85,733.33
+
+2. MODEL DETAILS
+----------------------------------------------------------------------
+  Model Type: Linear Regression (Time Series)
+  Monthly Trend: $1,148.86
+  Base Value: $81,712.33
+  R² Score: 0.9177
+  RMSE: $587.54
+
+3. FORECAST (Jul-Dec)
+----------------------------------------------------------------------
+  Month  7 (July     ): $   89,754.33
+  Month  8 (August   ): $   90,903.19
+  Month  9 (September): $   92,052.05
+  Month 10 (October  ): $   93,200.90
+  Month 11 (November ): $   94,349.76
+  Month 12 (December ): $   95,498.62
+  Total H2:          $  555,758.86
+  Average/Month:     $   92,626.48
+
+4. YEAR-OVER-YEAR ANALYSIS
+----------------------------------------------------------------------
+  H1 Total (Jan-Jun):  $  514,400.00
+  H2 Total (Jul-Dec):  $  555,758.86
+  Annual Total:        $1,070,158.86
+  H2 vs H1 Growth:            8.04%
+
+5. RECOMMENDATIONS
+----------------------------------------------------------------------
+  ✓ Positive sales trend detected
+  → Consider increasing inventory for H2
+  → Plan for additional storage capacity
+
+======================================================================

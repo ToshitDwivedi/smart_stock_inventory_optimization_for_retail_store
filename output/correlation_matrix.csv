@@ -1,0 +1,5 @@
+,Units_Sold,Price,Opening_Stock,Total_Sales_Value
+Units_Sold,1.0,-0.848,0.952,0.419
+Price,-0.848,1.0,-0.804,-0.26
+Opening_Stock,0.952,-0.804,1.0,0.252
+Total_Sales_Value,0.419,-0.26,0.252,1.0
