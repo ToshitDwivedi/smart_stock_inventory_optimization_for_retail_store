@@ -44,8 +44,8 @@ st.markdown("""
 @st.cache_data
 def load_data():
     """Load sales data with caching."""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(script_dir, "..", "dataset", "updated_dataset.csv")
+    # Run from project root
+    file_path = "dataset/updated_dataset.csv"
     df = pd.read_csv(file_path)
     
     # Add calculated columns

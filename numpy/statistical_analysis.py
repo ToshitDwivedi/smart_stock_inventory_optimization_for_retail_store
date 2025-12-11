@@ -10,10 +10,9 @@ import numpy as np
 import pandas as pd
 import os
 
-# Configure paths
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(SCRIPT_DIR, "..", "dataset", "updated_dataset.csv")
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "output")
+# Configure paths (run from project root)
+DATA_PATH = "dataset/updated_dataset.csv"
+OUTPUT_DIR = "output"
 
 # Ensure output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)

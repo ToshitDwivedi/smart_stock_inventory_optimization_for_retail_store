@@ -8,11 +8,9 @@ Project: Smart Stock Inventory Optimization
 
 import numpy as np
 import pandas as pd
-import os
 
-# Configure paths
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(SCRIPT_DIR, "..", "dataset", "updated_dataset.csv")
+# Configure paths (run from project root)
+DATA_PATH = "dataset/updated_dataset.csv"
 
 
 def demonstrate_array_operations():

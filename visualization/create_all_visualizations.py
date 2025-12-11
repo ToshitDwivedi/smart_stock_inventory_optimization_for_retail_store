@@ -13,10 +13,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import os
 
-# Configure paths
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(SCRIPT_DIR, "..", "dataset", "updated_dataset.csv")
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, "..", "output", "visualizations")
+# Configure paths (run from project root)
+DATA_PATH = "dataset/updated_dataset.csv"
+OUTPUT_DIR = "output/visualizations"
 
 # Create output directories
 os.makedirs(OUTPUT_DIR, exist_ok=True)

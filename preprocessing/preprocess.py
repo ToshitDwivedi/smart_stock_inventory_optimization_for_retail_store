@@ -11,14 +11,13 @@ import numpy as np
 import os
 from datetime import datetime
 
-# Configure paths
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_PATH = os.path.join(SCRIPT_DIR, "..", "dataset", "sales_data.csv")
-OUTPUT_PATH = os.path.join(SCRIPT_DIR, "..", "dataset", "updated_dataset.csv")
-REPORT_PATH = os.path.join(SCRIPT_DIR, "..", "output", "preprocessing_report.txt")
+# Configure paths (run from project root)
+INPUT_PATH = "dataset/sales_data.csv"
+OUTPUT_PATH = "dataset/updated_dataset.csv"
+REPORT_PATH = "output/preprocessing_report.txt"
 
 # Ensure output directory exists
-os.makedirs(os.path.join(SCRIPT_DIR, "..", "output"), exist_ok=True)
+os.makedirs("output", exist_ok=True)
 
 
 def load_raw_data():
