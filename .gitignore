@@ -26,6 +26,9 @@ share/python-wheels/
 .ipynb_checkpoints
 regression/regression.ipynb
 
+#data files
+dataset/supply_chain_dataset1.csv
+
 # Virtual Environment
 venv/
 env/

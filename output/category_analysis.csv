@@ -1,5 +1,6 @@
-Category,Total_Units,Avg_Units,Total_Revenue,Avg_Revenue,Products_Count
-Beverage,950,79.17,91200,7600.0,12
-Cooking,342,28.5,58800,4900.0,12
-Personal Care,1495,124.58,63050,5254.17,12
-Staples,2670,111.25,167825,6992.71,24
+Category,Total_Sales_Value
+Beverage,76300
+Cooking,98125
+Personal Care,107375
+Snacks,105500
+Staples,127100

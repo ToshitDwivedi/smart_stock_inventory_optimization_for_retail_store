@@ -1,18 +1,18 @@
-Product_Name,Total_Sales_Value
-Dal,52250
-Rice,47100
-Wheat,46200
-Shampoo,45600
-Tea,45600
-Facewash,45000
-Toothpaste,35750
-Cold Drink,31800
-Soap,27300
-Snacks,24625
-Biscuits,23600
-Sugar,22275
-Lotion,17550
-Perfume,17500
-Oil,13800
-Body Spray,10800
-Hand Sanitizer,7650
+Product_Name,Units_Sold,Total_Sales_Value
+Biscuits,1180,23600
+Body Spray,54,10800
+Cold Drink,1060,31800
+Dal,550,52250
+Facewash,250,45000
+Hand Sanitizer,85,7650
+Lotion,117,17550
+Oil,92,13800
+Perfume,70,17500
+Rice,785,47100
+Shampoo,380,45600
+Snacks,985,24625
+Soap,780,27300
+Sugar,495,22275
+Tea,570,45600
+Toothpaste,715,35750
+Wheat,840,46200
